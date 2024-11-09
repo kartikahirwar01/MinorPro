@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Front.css">
+</head>
+<body>
+    <div id="booked">
+        <h2>Goods Transport Booking</h2>
+        <form action="/submit-form" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Pick-up Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Pick-up Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter pick-up location" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+            </div>
+        
+            <div class="payment-options">
+                <div class="payment-option" id="paytm-option" onclick="setPaymentMethod('Paytm')">Paytm</div>
+                <div class="payment-option" id="phonepe-option" onclick="setPaymentMethod('PhonePe')">PhonePe</div>
+                <div class="payment-option" id="netbanking-option" onclick="setPaymentMethod('Net Banking')">Net Banking</div>
+            </div>
+        
+            <input type="hidden" id="paymentMethod" name="paymentMethod">
+        
+            <button type="submit" class="submit-btn">Book Now</button>
+        </form>
+        
+       
+        
+            <div class="more-info" id="infoToggle">More Information</div>
+        
+            <div class="info-card" id="infoCard">
+                <p>We offer secure and reliable transportation services across the country, ensuring your goods are delivered on time.</p>
+                <p>Payment can be made via Paytm, PhonePe, or Net Banking.</p>
+            </div>
+        </div>
+        </div>
+        <!-- confirmation -->
+        
+        <!-- <div class="confirmation-container">
+            <h2>Booking Confirmed!</h2>
+            <p>Thank you for booking with us. Your goods transport is successfully scheduled.</p>
+        
+            <div class="confirmation-details">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Pick-up Date:</strong> 20th October, 2024</p> 
+                <p><strong>Pick-up Location:</strong> Mumbai</p> 
+                <p><strong>Destination:</strong> Delhi</p> 
+                <p><strong>Payment Method:</strong> Paytm</p> 
+            </div>
+        
+            <button class="go-home-btn" onclick="goHome()">Back to Home</button>
+        </div> -->
+        
+        
+        <br>
+        <br>
+        <script>
+            function setPaymentMethod(method) {
+                document.getElementById('paymentMethod').value = method;
+            }
+        </script>
+</body>
+</html>

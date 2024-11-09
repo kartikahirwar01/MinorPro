@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Offcanvas</title>
+    <link rel="stylesheet" href="../css/Front.css">
+    <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="../css/Review.css">
+</head>
+<body>
+    <div id="typewriter">
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyWebsite</div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+
+            <!-- Links and Buttons -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+
+            <!-- Menu button for mobile -->
+            <button class="menu-btn" onclick="openNav()">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Menu -->
+    <div id="offcanvasMenu" class="offcanvas">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button > <a href="Profile.html" class="login-btn">Profile </a></button></li>
+            <li><button class="login-btn">Login</button></li>
+            
+        </ul>
+
+        <!-- Search Bar inside offcanvas -->
+        <div class="search-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button>Login</button></li>
+                <li><button> <a href="Registrationform.html">Register </a></button></li>
+                <li><button> <a href="Profile.html">Profile </a></button></li>
+            </ul>
+        </div>
+    </div>
+
+    
+  <div id="front-bg"> <div class="transparent-div">
+    <div><h1><span class="type"><span>Welcome to our site</span></span> </h1>
+        <button class="register-btn"> <a href="Registrationform.html" style="text-decoration: none; color: white;" >Register Now</a></button>  </div>
+    
+    <br>
+   
+
+    </div>
+    
+</div>
+
+<div id="about-bg">
+<section class="about-section">
+    <h1>Truck Transport - Delivering Furniture, Woods</h1>
+    <p>
+        We specialize in efficient and reliable truck transportation, ensuring your goods reach their destination on time and in perfect condition. Our modern fleet of trucks is equipped to handle cargo of all sizes, from furniture and wood products to all kinds of household items.
+    </p>
+
+    <!-- Furniture Div -->
+    <div class="content-div furniture-div">
+        <h2>Furniture Transport</h2>
+        <p>We ensure safe transport of furniture with full protection and care.</p>
+        <div class="image-gallery">
+            <img id="img1" src="furni.png" alt="Furniture Image 1">
+            <img id="img2" src="Furni2.png" alt="Furniture Image 2">
+        </div>
+    </div>
+
+    <!-- Woods Div -->
+    <div class="content-div woods-div">
+        <h2>Wood Transport</h2>
+        <p>Specialized in transporting wood and lumber with care and expertise.</p>
+        <div class="image-gallery">
+            <img id="img3" src="woods.png" alt="Wood Image 1">
+            <img id="img4" src="woods2.png"alt="Wood Image 2">
+
+        </div>
+    </div>
+
+    <!-- Ghar Saman Div -->
+    <div class="content-div household-div">
+        <h2>Household Goods Transport</h2>
+        <p>From delicate items to heavy goods, we manage household transport with efficiency.</p>
+        <div class="image-gallery">
+            <img id="img5" src="household.png" alt="Household Image 1">
+            <img id="img6" src="house2.png" alt="Household Image 2">
+        </div>
+    </div>
+</section>
+</div>
+</div>
+
+<!-- service design -->
+
+
+<div class="header">
+    <h1>Goods Transportation Services</h1>
+    <p>Your trusted partner in moving goods worldwide.</p>
+  </div>
+
+  <div class="services-container">
+    <div class="service-item">
+      <img src="truck.jpg" alt="Truck" class="service-icon">
+      <h2>Truck Delivery</h2>
+      <p>Fast and reliable delivery of bulk goods locally and nationwide.</p>
+    </div>
+
+    <div class="service-item">
+      <img src="cargo-ship-icon.png" alt="Cargo Ship" class="service-icon">
+      <h2>Cargo Ship</h2>
+      <p>Ship large quantities of goods internationally with maximum security.</p>
+    </div>
+
+    <div class="service-item">
+      <img src="freight-train-icon.png" alt="Freight Train" class="service-icon">
+      <h2>Freight Train</h2>
+      <p>Efficient transportation of heavy goods across long distances.</p>
+    </div>
+
+    <div class="service-item">
+      <img src="air-freight-icon.png" alt="Air Freight" class="service-icon">
+      <h2>Air Freight</h2>
+      <p>Quick air transport for high-priority or time-sensitive shipments.</p>
+    </div>
+
+    <div class="service-item">
+      <img src="warehouse-icon.png" alt="Warehouse" class="service-icon">
+      <h2>Warehouse Services</h2>
+      <p>Secure storage solutions and inventory management for your goods.</p>
+    </div>
+
+    <div class="service-item">
+      <img src="bulk-goods-icon.png" alt="Bulk Goods" class="service-icon">
+      <h2>Bulk Goods</h2>
+      <p>Specialized services for transporting large volumes of bulk materials.</p>
+    </div>
+  </div>
+  <br>
+
+  <!-- contact -->
+
+  <div class="contact-container" style="background-image: url(service.jpg); height: 600px;
+   background-size:cover; ">
+    <h1>Contact Us</h1>
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<br>
+<!-- Booking -->
+<div id="booked">
+<h2>Goods Transport Booking</h2>
+<form id="bookingForm" action="/submit-form" method="post">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Pick-up Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Pick-up Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter pick-up location" required>
+        </div>
+        <div class="form-group">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+        </div>
+
+        <!-- Payment Options -->
+        <div class="payment-options">
+            <div class="payment-option" id="paytm-option">Paytm</div>
+            <div class="payment-option" id="phonepe-option">PhonePe</div>
+            <div class="payment-option" id="netbanking-option">Net Banking</div>
+        </div>
+        <br>
+        <button type="submit" class="submit-btn">Book Now</button>
+    </form>
+
+    <div class="more-info" id="infoToggle">More Information</div>
+
+    <div class="info-card" id="infoCard">
+        <p>We offer secure and reliable transportation services across the country, ensuring your goods are delivered on time.</p>
+        <p>Payment can be made via Paytm, PhonePe, or Net Banking.</p>
+    </div>
+</div>
+</div>
+<!-- confirmation -->
+
+<!-- <div class="confirmation-container">
+    <h2>Booking Confirmed!</h2>
+    <p>Thank you for booking with us. Your goods transport is successfully scheduled.</p>
+
+    <div class="confirmation-details">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Pick-up Date:</strong> 20th October, 2024</p> 
+        <p><strong>Pick-up Location:</strong> Mumbai</p> 
+        <p><strong>Destination:</strong> Delhi</p> 
+        <p><strong>Payment Method:</strong> Paytm</p> 
+    </div>
+
+    <button class="go-home-btn" onclick="goHome()">Back to Home</button>
+</div> -->
+
+
+<br>
+<br>
+
+<!-- location feed -->
+
+<div class="location-feed">
+
+<h1>Live Location Feed</h1>
+
+    <div class="location-section">
+        <!-- Location Suggestion Input -->
+        <input type="text" class="location-suggestion" id="location-input" placeholder="Enter a location (e.g., city or place)" onkeyup="locationSuggestion(event)">
+        
+        <!-- Live Location Info -->
+        <div class="location-info" id="location-info">
+            <p><strong>Latitude:</strong> <span id="latitude">Fetching...</span></p>
+            <p><strong>Longitude:</strong> <span id="longitude">Fetching...</span></p>
+            <p><strong>Accuracy:</strong> <span id="accuracy">Fetching...</span></p>
+        </div>
+
+        <!-- OpenStreetMap -->
+        <div id="map"></div>
+
+        <!-- Refresh Button -->
+        <button class="refresh-btn" onclick="getLocation()">Refresh Location</button>
+    </div>
+
+</div>
+
+<!-- review -->
+
+
+
+<div id="review">
+    <div class="main-wrapper">
+        <h1>Goods Transport Review & Rating</h1>
+
+        <!-- Review Form -->
+        <div class="form-section">
+            <h2>Submit Your Review</h2>
+            <input type="text" id="transport-company" placeholder="Enter Transport Company" required>
+            <div class="rating-bar">
+                <span class="rating-star" data-score="1">★</span>
+                <span class="rating-star" data-score="2">★</span>
+                <span class="rating-star" data-score="3">★</span>
+                <span class="rating-star" data-score="4">★</span>
+                <span class="rating-star" data-score="5">★</span>
+            </div>
+            <textarea id="feedback-text" placeholder="Share your experience..." required></textarea>
+            <button onclick="saveReview()" class="btn">Submit Review</button>
+        </div>
+
+        <!-- Display Reviews -->
+        <div class="review-section">
+            <h2>Recent Reviews</h2>
+            <div id="review-board">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- footer-->
+
+
+
+
+
+<div id="footer-div">  <footer id="transFooter">
+    <div id="footerContainer">
+        <div class="footerSection" id="companyInfo">
+            <h4>About Us</h4>
+            <p>Reliable transport services across the country. We ensure fast, safe, and timely delivery of goods.</p>
+        </div>
+
+        <div class="footerSection" id="quickLinks">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/faqs">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div class="footerSection" id="newsletter">
+            <h4>Newsletter</h4>
+            <form id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit" id="subscribeButton">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="footerSection" id="socialMedia">
+            <h4>Follow Us</h4>
+            <a href="https://facebook.com" class="socialLink">Facebook</a> | 
+            <a href="https://twitter.com" class="socialLink">Twitter</a> | 
+            <a href="https://linkedin.com" class="socialLink">LinkedIn</a>
+        </div>
+    </div>
+
+    <div id="footerCopyright">
+        <p> Goods Transport Services. All Rights Reserved.</p>
+    </div>
+</footer></div>
+
+
+
+
+    <script src="../js/Front.js"></script>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>

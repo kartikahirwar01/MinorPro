@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.about-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #eaeaea;
+    position: relative;
+    perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.content-div {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform-style: preserve-3d; /* Enable 3D effect */
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(0deg);
+}
+
+/* 3D tilt effect on hover */
+.content-div:hover {
+    transform: rotateY(10deg); /* Rotate the div to create a 3D tilt effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Truck styling without animation */
+#truck {
+    position: absolute;
+    left: -300px;
+    bottom: 0;
+    width: 300px;
+}
+
+/* Add animations to fade in content */
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-div h2, .content-div p {
+    opacity: 0;
+    animation: fadeInContent 1s forwards;
+}
+
+.content-div h2 {
+    animation-delay: 0.3s;
+}
+
+.content-div p {
+    animation-delay: 0.6s;
+}
+
+
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    opacity: 0; /* Hidden initially */
+    transform: translateX(-100px) scale(1); /* Start position for move animation */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: moveIn 1s forwards ease-in-out; /* Animation to move in */
+}
+
+/* Keyframes for Move Animation */
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) scale(1); /* Start off to the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1.05); /* Move to original position and slightly zoom */
+    }
+}
+
+/* Hover Effect for Images */
+.image-gallery img:hover {
+    transform: scale(1.1) rotateX(10deg); /* Zoom in and slightly rotate on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow for 3D effect */
+}
+
+#about-bg{
+    background-color: rgba(0, 0, 0, 0.434);
+}
+
